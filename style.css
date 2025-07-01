@@ -1,36 +1,20 @@
 :root {
-  --base: #fff;
-  --spacing: 50px;
-  --blur: 2px;
+  --padding: 10px;
+  --blur: 0px;
+  --color: #113675;
 }
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  background-color: rgb(56, 55, 55);
-  color: #fff;
-}
-
-h2 {
-  text-align: center;
-  font-size: 3rem;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 800px;
-  margin: 5rem auto;
 }
 
 img {
-  display: block;
-  height: 500px;
-  width: 800px;
-  border-radius: 5px;
-  margin: 2rem auto;
-  padding: var(--spacing);
-  background: var(--base);
+  margin: 20px 20px;
+  max-width: 1000px;
+  max-height: 1000px;
+  padding: var(--padding);
+  background: var(--color);
   filter: blur(var(--blur));
 }

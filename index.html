@@ -2,47 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Scoped CSS Variables and JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="https://fav.farm/✅" />
+    <title>CSS Variables</title>
   </head>
+
   <body>
-    <h2>Update CSS Variables with <span class="hl">JS</span></h2>
-    <div class="container">
-      <div class="spacing-container">
-        <label for="spacing">Spacing: </label>
-        <input
-          type="range"
-          id="spacing"
-          name="spacing"
-          min="0"
-          max="100"
-          value="1"
-          step="1"
-          data-sizing="px"
-        />
-        <p>Value: <output id="spacing-output"></output></p>
+    <h1>CSS Variables in JS</h1>
+    <div class="controls">
+      <div class="background">
+        <label for="color">Background: </label>
+        <input type="color" name="color" id="color" value="#ff0000" />
       </div>
-      <div class="blur-container">
+      <div class="blur">
         <label for="blur">Blur: </label>
         <input
           type="range"
           id="blur"
           name="blur"
           min="0"
-          max="100"
-          value="1"
-          step="1"
+          max="10"
+          value="0"
           data-sizing="px"
         />
-        <p>Value: <output id="blur-output"></output></p>
+        <span class="value" id="blur-value">Value: </span>
       </div>
-      <div class="color-container">
-        <label for="color">Color: </label>
-        <input type="color" id="color" name="color" value="#ffffff" />
+      <div class="padding">
+        <label for="padding">Padding: </label>
+        <input
+          type="range"
+          name="padding"
+          id="padding"
+          min="0"
+          max="20"
+          value="0"
+          data-sizing="px"
+        />
+        <span class="value" id="padding-value">Value: </span>
       </div>
     </div>
-    <img src="img.jpg" />
+    <img src="img.jpg" alt="image" />
     <script src="script.js"></script>
   </body>
 </html>
